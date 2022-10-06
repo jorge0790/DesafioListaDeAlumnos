@@ -1,0 +1,30 @@
+<div class = "container mt-5">
+<div class = "row g-0">
+<div *ngFor = "let pokemon of POKEMONS" class = "col-100">
+    <div class="card">
+    <!--  <img src="{{pokemon.img}}" alt=""/>  -->
+
+     <div class="card">
+   <h1 class= " card-title ">{{ pokemon.nombre}}</h1>
+        <ul class="list-group">
+            <li 
+            *ngFor = "let habilidad of pokemon.habilidades ; index as i"
+            class="List-group-item d-flex justify-content-between align-items-center"
+
+           
+            >
+            <h1>{{habilidad}}</h1>
+                
+            </li>
+         
+
+
+        </ul>
+
+     </div>
+
+
+    </div>
+    </div>
+</div>
+</div>
